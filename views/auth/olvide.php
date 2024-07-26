@@ -2,10 +2,10 @@
 <?php include_once __DIR__ . '/../templates/nombre-sitio.php';?>
     <div class="contenedor-sm">
     <div class="contenedor crear">
-<?php include_once __DIR__ . '/../templates/nombre-sitio.php';?>
     <div class="contenedor-sm">
         <p class="descripcion-pagina">Recupera tu cuenta en UpTask
         </p>
+        <?php include_once __DIR__ . '/../templates/alertas.php';?>
         <form class="formulario" action="/olvide" method="post">
 
         <div class="campo">

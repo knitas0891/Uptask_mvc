@@ -2,7 +2,9 @@
 <?php include_once __DIR__ . '/../templates/nombre-sitio.php';?>
     <div class="contenedor-sm">
         <p class="descripcion-pagina">Coloca tu Password</p>
-        <form class="formulario" action="/restablecer" method="post">
+        <?php include_once __DIR__ . '/../templates/alertas.php';?>
+        <?php if($mostrar){ ?>
+        <form class="formulario" method="POST">
 
             <div class="campo">
                 <label for="password">Password</label>
@@ -15,6 +17,8 @@
             </div>
             <input type="submit" class="boton" value="Iniciar Sesión">
         </form>
+
+        <?php } ?>
         <div class="acciones">
             <a href="/crear">¿Aun no tienes una cuenta?</a>
             <a href="/olvide">¿Olvidaste tu contraseña?</a>
